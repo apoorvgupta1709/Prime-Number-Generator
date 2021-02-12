@@ -1,0 +1,10 @@
+CREATE TABLE `finder` (
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `time_stamp` datetime DEFAULT CURRENT_TIMESTAMP,
+  `first_no` varchar(45) DEFAULT NULL,
+  `second_no` varchar(45) DEFAULT NULL,
+  `time_elapsed` double DEFAULT NULL,
+  `method_chosen` int DEFAULT NULL,
+  `quantity` int DEFAULT NULL,
+  PRIMARY KEY (`user_id`)
+);
