@@ -109,14 +109,9 @@ public class PrimeMain extends HttpServlet {
 
 			int status=ps.executeUpdate();
 
-			if(status >0)
-			{
-				request.getRequestDispatcher("Check.jsp").include(request, response);;
+			request.getRequestDispatcher("Check.jsp").include(request, response);
 				
-			}else {
-				request.getRequestDispatcher("Check.jsp").include(request, response);;
-				
-			}
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
